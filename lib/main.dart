@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:xeno/pages/home_page.dart';
-import 'package:xeno//theme/colors.dart';
+import 'package:xeno/theme/colors.dart';
 
 void main() {
   runApp(const MyApp());
