@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:xeno/theme/colors.dart';
 import 'package:xeno/widgets/answer_section.dart';
-import 'package:xeno/wi  dgets/side_bar.dart';
+import 'package:xeno/widgets/side_bar.dart';
 import 'package:xeno/widgets/sources_section.dart';
 
 class ChatPage extends StatelessWidget {
