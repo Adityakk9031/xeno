@@ -14,6 +14,17 @@ class _SideBarState extends  State<SideBar> {
 
   @override
   Widget build(BuildContext context){
-    return AnimatedContainer
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 100),
+      width: isCollapsed ? 64:150,
+      color: AppColors.sideNav,
+      children: [
+        const SizedBox(height: 16),
+        Icon(
+          Icons.auto_awesome_mosaic,
+          colors
+        )
+      ]
+    )
   }
 }
