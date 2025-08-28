@@ -34,6 +34,55 @@ class _searchsection extends state<_searchsection> {
             letterSpacing:0.5
           ),
         ),
+        const SizedBox(height: 32),
+        Container(
+          width: 700,
+          decoration: BoxDecoration(
+            color: AppColors.searchBar,
+            border: Border.all(
+              color: Appcolor.searchBarBorder,
+              width: 1.5,
+            ),
+          ),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: TextField(
+                  controller: querycontroller,
+                  decoration: InputDecoration(
+                    hintText: 'Search anything...',
+                    color: AppColors.textGrey,
+                    fontSize: 16,
+                  ),
+                  border: InputBorder.none,
+                  isDense: true,
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+    ),
+    Padding(
+    padding: const EdgeInsets.all(10.0),
+    child: Row(
+    children: [
+      SerachBarButton(
+    icon: Icons.auto_awesome_outlined,
+    text: 'Attach',
+    ),
+    const Spacer(),
+    SearchBarButton(icon: Icons.add_circle_outline_outlined, text: 'Attach')
+    const Spacer(),
+    GestureDetector(
+    onTap: () {
+      chatWebService().chat(querycontroller.text.trim())
+    }
+    )
+    ]
+    )
+    )
+            ]
+          )
+        )
       ]
     )
   }
