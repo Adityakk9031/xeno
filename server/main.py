@@ -1,7 +1,11 @@
-from fastapi import FastAPI
+import asyncio
+form fastapi import FastAPI, WebSocket
 
-app = FastAPI()
+from pydantic_models.chat_body import chatBody
+from services.llm_service import LLMService
+from services.sort_source_service import SortSourceService
+from services.search_service import SearchService
 
-@app.get("/")
-def hello_world():
-    return {"message": "hello world"}
+app=FASTAPI()
+
+search_service=SearchService()
