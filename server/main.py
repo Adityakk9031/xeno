@@ -9,3 +9,6 @@ from services.search_service import SearchService
 app=FASTAPI()
 
 search_service=SearchService()
+sort_source_service=SortSourceService()
+llm_service=LLMService()
+
